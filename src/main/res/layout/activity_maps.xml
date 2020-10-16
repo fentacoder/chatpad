@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:map="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:id="@id/mapsRelativeLayout" android:background="@drawable/white_border" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:elevation="10.0dip">
+        <EditText android:textSize="15.0sp" android:textColor="@color/colorAccent" android:id="@id/mapsSearchBar" android:layout_width="280.0dip" android:layout_height="fill_parent" android:hint="@string/enter_address_city_or_zip_code" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:layout_marginStart="5.0dip" />
+        <Button android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/mapsSearchButton" android:background="@android:color/transparent" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/search" android:layout_toEndOf="@id/mapsSearchBar" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

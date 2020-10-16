@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_shopping" android:title="@string/shopping" />
+    <item android:id="@id/menu_vehicles" android:title="@string/vehicles" />
+    <item android:id="@id/menu_going_out" android:title="@string/going_out_for_a_good_time" />
+    <item android:id="@id/menu_sports" android:title="@string/sports" />
+    <item android:id="@id/menu_music_production" android:title="@string/music_producing" />
+    <item android:id="@id/menu_artwork" android:title="@string/artwork_artist" />
+    <item android:id="@id/menu_film_production" android:title="@string/film_production" />
+    <item android:id="@id/menu_venting_frustration" android:title="@string/venting_frustration" />
+    <item android:id="@id/menu_traveling" android:title="@string/traveling" />
+    <item android:id="@id/menu_hiking" android:title="@string/hiking" />
+    <item android:id="@id/menu_studying" android:title="@string/studying" />
+    <item android:id="@id/menu_videogames" android:title="@string/videogames" />
+    <item android:id="@id/menu_canoeing" android:title="@string/canoeing" />
+    <item android:id="@id/menu_engineering_projects" android:title="@string/engineering_projects" />
+    <item android:id="@id/menu_programming_projects" android:title="@string/programming_projects" />
+</menu>

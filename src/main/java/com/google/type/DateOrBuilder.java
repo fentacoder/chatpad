@@ -1,0 +1,17 @@
+package com.google.type;
+
+import com.google.protobuf.MessageLiteOrBuilder;
+
+public interface DateOrBuilder extends MessageLiteOrBuilder {
+  int getDay();
+  
+  int getMonth();
+  
+  int getYear();
+}
+
+
+/* Location:              C:\Users\jamar\Documents\android_location\apk_conversion\dex2jar-3.0\classes2-dex2jar.jar!\com\google\type\DateOrBuilder.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

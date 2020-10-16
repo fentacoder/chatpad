@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:fitsSystemWindows="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/settingsLayout" android:background="@drawable/main_gradient_bg_2" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/settingsButton" android:background="@drawable/yellow_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" android:onClick="onSettingsSaveClicked" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/settingsTitleColor" android:gravity="start" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/communication_settings" android:layout_marginStart="16.0dip" />
+        <RelativeLayout android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="start" android:id="@id/settingsMaximumDistanceTitle" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="@string/maximum_distance" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="end" android:id="@id/settingsMaximumDistance" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginStart="140.0dip" android:layout_toEndOf="@id/settingsMaximumDistanceTitle" />
+            <SeekBar android:id="@id/settingsDistanceSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/settingsMaximumDistanceTitle" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="start" android:id="@id/settingsAgeMinimumTitle" android:layout_width="130.0dip" android:layout_height="wrap_content" android:text="@string/age_minimum" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="end" android:id="@id/settingsAgeMinimum" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginStart="130.0dip" android:layout_toEndOf="@id/settingsAgeMinimumTitle" />
+            <SeekBar android:id="@id/settingsAgeMinSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/settingsAgeMinimumTitle" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="start" android:id="@id/settingsAgeMaximumTitle" android:layout_width="132.0dip" android:layout_height="wrap_content" android:text="@string/age_maximum" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="end" android:id="@id/settingsAgeMaximum" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginStart="130.0dip" android:layout_toEndOf="@id/settingsAgeMaximumTitle" />
+            <SeekBar android:id="@id/settingsAgeMaxSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/settingsAgeMaximumTitle" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/settingsLocationFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsLocationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="60.0dip" android:layout_toEndOf="@id/settingsLocationTitle" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffb5b3b3" android:id="@id/settingsCurrentLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/settingsLocation" android:layout_marginStart="140.0dip" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/settingsSwitchCategoryFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsSwitchCategoriesTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/switch_categories" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/settingsSwitchGenderPrefFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsSwitchGenderPrefTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/switch_gender_preference" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/settingsWidgetBg" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+            <View android:background="#ffb5b3b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/settingsChangeColorFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsChangeColorTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/change_background_color" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/settingsTitleColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/picture_settings" android:layout_marginStart="16.0dip" />
+        <RelativeLayout android:id="@id/settingsEditPicturesFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsEditPicturesTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/change_your_pictures" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/settingsTitleColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/notification_settings" android:layout_marginStart="16.0dip" />
+        <RelativeLayout android:id="@id/settingsNotificationFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsManageNotificationsTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/push_notifications" />
+            <Switch android:id="@id/settingsNotificationSwitch" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsShowMeFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsShowMeTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/show_me_on_chatpad" />
+            <Switch android:id="@id/settingsShowMeSwitch" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/settingsTitleColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/safety_tips" android:layout_marginStart="16.0dip" />
+        <RelativeLayout android:id="@id/settingsSafetyTipsFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsSafetyTipsTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/safety_tips" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/settingsTitleColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/terms_and_privacy_policy" android:layout_marginStart="16.0dip" />
+        <RelativeLayout android:id="@id/settingsTermsAndPrivacyFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:id="@id/settingsTermsAndPrivacyTitle" android:layout_width="320.0dip" android:layout_height="wrap_content" android:text="@string/terms_and_privacy_policy" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/settingsColor" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsPaymentFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="center" android:id="@id/settingsPaymentTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_settings" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsResetSwipesFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="center" android:id="@id/settingsResetSwipesTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reset_swipes" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsChangePasswordFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="center" android:id="@id/settingsChangePasswordTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/change_your_password" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsLogOutFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="center" android:id="@id/settingsLogOutTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/log_out" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/settingsDeleteAccountFrameView" android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/settingsColor" android:gravity="center" android:id="@id/settingsDeleteAccountTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

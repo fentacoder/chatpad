@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/signUpInstrumentSelectorScrollView" android:background="@drawable/main_gradient_bg_2" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/signUpInstrumentSelectorLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/selectCategorySignUp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/select_the_category_that_you_want_others_to_find_you_by_you_can_always_change_it_later_in_the_settings" />
+        <ListView android:id="@id/categoryListViewSignUp" android:layout_width="fill_parent" android:layout_height="950.0dip" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/userSignUpCategorySelected" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/specificInstrumentTextViewSignUp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/now_tell_us_about_yourself" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/colorAccent" android:id="@id/specificInstrumentSignUpEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:hint="@string/you_can_change_this_later_in_settings" android:inputType="textMultiLine" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center" android:id="@id/categoryScreenSignUpButton" android:background="@drawable/white_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/continue_button" android:onClick="onCategorySignUpButtonClicked" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/instrumentSelectorProgressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:layout_gravity="center" android:id="@id/textView3" android:layout_width="50.0dip" android:layout_height="400.0dip" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</ScrollView>

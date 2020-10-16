@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/locationChooserLayout" android:background="@drawable/main_gradient_bg_2" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="@color/colorAccent" android:id="@id/locationChooserBack" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:onClick="onLocationChooserBackClicked" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/location_selected" />
+    <RelativeLayout android:background="@drawable/white_border" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/settingsColor" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/location_selected_title" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/settingsColor" android:id="@id/locationChooserTextView" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginStart="60.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <Button android:textStyle="bold" android:id="@id/locationChooserAdd" android:background="@drawable/white_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/add_a_new_location" android:onClick="onLocationChooserAddClicked" />
+    <Button android:textStyle="bold" android:id="@id/locationChooserSwitchToCurrent" android:background="@drawable/white_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/switch_to_current_location" android:onClick="onLocationChooserSwitchToCurrentClicked" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/locationChooserLocationText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/recent_locations" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/locationChooserRecyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+</LinearLayout>

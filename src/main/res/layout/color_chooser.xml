@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/colorChooserLayout" android:background="@drawable/main_gradient_bg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="@color/colorAccent" android:id="@id/colorChooserBack" android:background="@drawable/white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/back" android:layout_marginStart="10.0dip" />
+    <RelativeLayout android:background="@color/settingsWidgetBg" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/colorChooserDarkMode" android:layout_width="250.0dip" android:layout_height="wrap_content" android:text="@string/dark_mode" android:layout_alignParentStart="true" />
+        <Switch android:id="@id/colorChooserSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/colorChooserRecyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+</LinearLayout>

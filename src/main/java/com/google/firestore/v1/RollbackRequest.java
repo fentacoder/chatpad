@@ -1,0 +1,403 @@
+package com.google.firestore.v1;
+
+import com.google.protobuf.ByteString;
+import com.google.protobuf.CodedInputStream;
+import com.google.protobuf.CodedOutputStream;
+import com.google.protobuf.ExtensionRegistryLite;
+import com.google.protobuf.GeneratedMessageLite;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.Parser;
+import java.io.IOException;
+import java.io.InputStream;
+
+public final class RollbackRequest extends GeneratedMessageLite<RollbackRequest, RollbackRequest.Builder> implements RollbackRequestOrBuilder {
+  public static final int DATABASE_FIELD_NUMBER = 1;
+  
+  private static final RollbackRequest DEFAULT_INSTANCE = new RollbackRequest();
+  
+  private static volatile Parser<RollbackRequest> PARSER;
+  
+  public static final int TRANSACTION_FIELD_NUMBER = 2;
+  
+  private String database_ = "";
+  
+  private ByteString transaction_ = ByteString.EMPTY;
+  
+  static {
+    DEFAULT_INSTANCE.makeImmutable();
+  }
+  
+  private void clearDatabase() {
+    this.database_ = getDefaultInstance().getDatabase();
+  }
+  
+  private void clearTransaction() {
+    this.transaction_ = getDefaultInstance().getTransaction();
+  }
+  
+  public static RollbackRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+  
+  public static Builder newBuilder() {
+    return (Builder)DEFAULT_INSTANCE.toBuilder();
+  }
+  
+  public static Builder newBuilder(RollbackRequest paramRollbackRequest) {
+    return (Builder)((Builder)DEFAULT_INSTANCE.toBuilder()).mergeFrom(paramRollbackRequest);
+  }
+  
+  public static RollbackRequest parseDelimitedFrom(InputStream paramInputStream) throws IOException {
+    return (RollbackRequest)parseDelimitedFrom(DEFAULT_INSTANCE, paramInputStream);
+  }
+  
+  public static RollbackRequest parseDelimitedFrom(InputStream paramInputStream, ExtensionRegistryLite paramExtensionRegistryLite) throws IOException {
+    return (RollbackRequest)parseDelimitedFrom(DEFAULT_INSTANCE, paramInputStream, paramExtensionRegistryLite);
+  }
+  
+  public static RollbackRequest parseFrom(ByteString paramByteString) throws InvalidProtocolBufferException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramByteString);
+  }
+  
+  public static RollbackRequest parseFrom(ByteString paramByteString, ExtensionRegistryLite paramExtensionRegistryLite) throws InvalidProtocolBufferException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramByteString, paramExtensionRegistryLite);
+  }
+  
+  public static RollbackRequest parseFrom(CodedInputStream paramCodedInputStream) throws IOException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramCodedInputStream);
+  }
+  
+  public static RollbackRequest parseFrom(CodedInputStream paramCodedInputStream, ExtensionRegistryLite paramExtensionRegistryLite) throws IOException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramCodedInputStream, paramExtensionRegistryLite);
+  }
+  
+  public static RollbackRequest parseFrom(InputStream paramInputStream) throws IOException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramInputStream);
+  }
+  
+  public static RollbackRequest parseFrom(InputStream paramInputStream, ExtensionRegistryLite paramExtensionRegistryLite) throws IOException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramInputStream, paramExtensionRegistryLite);
+  }
+  
+  public static RollbackRequest parseFrom(byte[] paramArrayOfbyte) throws InvalidProtocolBufferException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramArrayOfbyte);
+  }
+  
+  public static RollbackRequest parseFrom(byte[] paramArrayOfbyte, ExtensionRegistryLite paramExtensionRegistryLite) throws InvalidProtocolBufferException {
+    return (RollbackRequest)GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, paramArrayOfbyte, paramExtensionRegistryLite);
+  }
+  
+  public static Parser<RollbackRequest> parser() {
+    return DEFAULT_INSTANCE.getParserForType();
+  }
+  
+  private void setDatabase(String paramString) {
+    if (paramString != null) {
+      this.database_ = paramString;
+      return;
+    } 
+    throw new NullPointerException();
+  }
+  
+  private void setDatabaseBytes(ByteString paramByteString) {
+    if (paramByteString != null) {
+      checkByteStringIsUtf8(paramByteString);
+      this.database_ = paramByteString.toStringUtf8();
+      return;
+    } 
+    throw new NullPointerException();
+  }
+  
+  private void setTransaction(ByteString paramByteString) {
+    if (paramByteString != null) {
+      this.transaction_ = paramByteString;
+      return;
+    } 
+    throw new NullPointerException();
+  }
+  
+  protected final Object dynamicMethod(GeneratedMessageLite.MethodToInvoke paramMethodToInvoke, Object paramObject1, Object paramObject2) {
+    // Byte code:
+    //   0: getstatic com/google/firestore/v1/RollbackRequest$1.$SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke : [I
+    //   3: aload_1
+    //   4: invokevirtual ordinal : ()I
+    //   7: iaload
+    //   8: istore #4
+    //   10: iconst_0
+    //   11: istore #5
+    //   13: iconst_0
+    //   14: istore #6
+    //   16: iload #4
+    //   18: tableswitch default -> 64, 1 -> 375, 2 -> 371, 3 -> 369, 4 -> 360, 5 -> 252, 6 -> 118, 7 -> 248, 8 -> 72
+    //   64: new java/lang/UnsupportedOperationException
+    //   67: dup
+    //   68: invokespecial <init> : ()V
+    //   71: athrow
+    //   72: getstatic com/google/firestore/v1/RollbackRequest.PARSER : Lcom/google/protobuf/Parser;
+    //   75: ifnonnull -> 114
+    //   78: ldc com/google/firestore/v1/RollbackRequest
+    //   80: monitorenter
+    //   81: getstatic com/google/firestore/v1/RollbackRequest.PARSER : Lcom/google/protobuf/Parser;
+    //   84: ifnonnull -> 102
+    //   87: new com/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser
+    //   90: astore_1
+    //   91: aload_1
+    //   92: getstatic com/google/firestore/v1/RollbackRequest.DEFAULT_INSTANCE : Lcom/google/firestore/v1/RollbackRequest;
+    //   95: invokespecial <init> : (Lcom/google/protobuf/GeneratedMessageLite;)V
+    //   98: aload_1
+    //   99: putstatic com/google/firestore/v1/RollbackRequest.PARSER : Lcom/google/protobuf/Parser;
+    //   102: ldc com/google/firestore/v1/RollbackRequest
+    //   104: monitorexit
+    //   105: goto -> 114
+    //   108: astore_1
+    //   109: ldc com/google/firestore/v1/RollbackRequest
+    //   111: monitorexit
+    //   112: aload_1
+    //   113: athrow
+    //   114: getstatic com/google/firestore/v1/RollbackRequest.PARSER : Lcom/google/protobuf/Parser;
+    //   117: areturn
+    //   118: aload_2
+    //   119: checkcast com/google/protobuf/CodedInputStream
+    //   122: astore_1
+    //   123: aload_3
+    //   124: checkcast com/google/protobuf/ExtensionRegistryLite
+    //   127: astore_2
+    //   128: iload #6
+    //   130: ifne -> 248
+    //   133: aload_1
+    //   134: invokevirtual readTag : ()I
+    //   137: istore #4
+    //   139: iload #4
+    //   141: ifeq -> 192
+    //   144: iload #4
+    //   146: bipush #10
+    //   148: if_icmpeq -> 181
+    //   151: iload #4
+    //   153: bipush #18
+    //   155: if_icmpeq -> 170
+    //   158: aload_1
+    //   159: iload #4
+    //   161: invokevirtual skipField : (I)Z
+    //   164: ifne -> 128
+    //   167: goto -> 192
+    //   170: aload_0
+    //   171: aload_1
+    //   172: invokevirtual readBytes : ()Lcom/google/protobuf/ByteString;
+    //   175: putfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   178: goto -> 128
+    //   181: aload_0
+    //   182: aload_1
+    //   183: invokevirtual readStringRequireUtf8 : ()Ljava/lang/String;
+    //   186: putfield database_ : Ljava/lang/String;
+    //   189: goto -> 128
+    //   192: iconst_1
+    //   193: istore #6
+    //   195: goto -> 128
+    //   198: astore_1
+    //   199: goto -> 246
+    //   202: astore_2
+    //   203: new java/lang/RuntimeException
+    //   206: astore_1
+    //   207: new com/google/protobuf/InvalidProtocolBufferException
+    //   210: astore_3
+    //   211: aload_3
+    //   212: aload_2
+    //   213: invokevirtual getMessage : ()Ljava/lang/String;
+    //   216: invokespecial <init> : (Ljava/lang/String;)V
+    //   219: aload_1
+    //   220: aload_3
+    //   221: aload_0
+    //   222: invokevirtual setUnfinishedMessage : (Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
+    //   225: invokespecial <init> : (Ljava/lang/Throwable;)V
+    //   228: aload_1
+    //   229: athrow
+    //   230: astore_2
+    //   231: new java/lang/RuntimeException
+    //   234: astore_1
+    //   235: aload_1
+    //   236: aload_2
+    //   237: aload_0
+    //   238: invokevirtual setUnfinishedMessage : (Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
+    //   241: invokespecial <init> : (Ljava/lang/Throwable;)V
+    //   244: aload_1
+    //   245: athrow
+    //   246: aload_1
+    //   247: athrow
+    //   248: getstatic com/google/firestore/v1/RollbackRequest.DEFAULT_INSTANCE : Lcom/google/firestore/v1/RollbackRequest;
+    //   251: areturn
+    //   252: aload_2
+    //   253: checkcast com/google/protobuf/GeneratedMessageLite$Visitor
+    //   256: astore_1
+    //   257: aload_3
+    //   258: checkcast com/google/firestore/v1/RollbackRequest
+    //   261: astore_2
+    //   262: aload_0
+    //   263: aload_1
+    //   264: aload_0
+    //   265: getfield database_ : Ljava/lang/String;
+    //   268: invokevirtual isEmpty : ()Z
+    //   271: iconst_1
+    //   272: ixor
+    //   273: aload_0
+    //   274: getfield database_ : Ljava/lang/String;
+    //   277: aload_2
+    //   278: getfield database_ : Ljava/lang/String;
+    //   281: invokevirtual isEmpty : ()Z
+    //   284: iconst_1
+    //   285: ixor
+    //   286: aload_2
+    //   287: getfield database_ : Ljava/lang/String;
+    //   290: invokeinterface visitString : (ZLjava/lang/String;ZLjava/lang/String;)Ljava/lang/String;
+    //   295: putfield database_ : Ljava/lang/String;
+    //   298: aload_0
+    //   299: getfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   302: getstatic com/google/protobuf/ByteString.EMPTY : Lcom/google/protobuf/ByteString;
+    //   305: if_acmpeq -> 314
+    //   308: iconst_1
+    //   309: istore #7
+    //   311: goto -> 317
+    //   314: iconst_0
+    //   315: istore #7
+    //   317: aload_0
+    //   318: getfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   321: astore_3
+    //   322: aload_2
+    //   323: getfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   326: getstatic com/google/protobuf/ByteString.EMPTY : Lcom/google/protobuf/ByteString;
+    //   329: if_acmpeq -> 335
+    //   332: iconst_1
+    //   333: istore #5
+    //   335: aload_0
+    //   336: aload_1
+    //   337: iload #7
+    //   339: aload_3
+    //   340: iload #5
+    //   342: aload_2
+    //   343: getfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   346: invokeinterface visitByteString : (ZLcom/google/protobuf/ByteString;ZLcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
+    //   351: putfield transaction_ : Lcom/google/protobuf/ByteString;
+    //   354: getstatic com/google/protobuf/GeneratedMessageLite$MergeFromVisitor.INSTANCE : Lcom/google/protobuf/GeneratedMessageLite$MergeFromVisitor;
+    //   357: astore_1
+    //   358: aload_0
+    //   359: areturn
+    //   360: new com/google/firestore/v1/RollbackRequest$Builder
+    //   363: dup
+    //   364: aconst_null
+    //   365: invokespecial <init> : (Lcom/google/firestore/v1/RollbackRequest$1;)V
+    //   368: areturn
+    //   369: aconst_null
+    //   370: areturn
+    //   371: getstatic com/google/firestore/v1/RollbackRequest.DEFAULT_INSTANCE : Lcom/google/firestore/v1/RollbackRequest;
+    //   374: areturn
+    //   375: new com/google/firestore/v1/RollbackRequest
+    //   378: dup
+    //   379: invokespecial <init> : ()V
+    //   382: areturn
+    // Exception table:
+    //   from	to	target	type
+    //   81	102	108	finally
+    //   102	105	108	finally
+    //   109	112	108	finally
+    //   133	139	230	com/google/protobuf/InvalidProtocolBufferException
+    //   133	139	202	java/io/IOException
+    //   133	139	198	finally
+    //   158	167	230	com/google/protobuf/InvalidProtocolBufferException
+    //   158	167	202	java/io/IOException
+    //   158	167	198	finally
+    //   170	178	230	com/google/protobuf/InvalidProtocolBufferException
+    //   170	178	202	java/io/IOException
+    //   170	178	198	finally
+    //   181	189	230	com/google/protobuf/InvalidProtocolBufferException
+    //   181	189	202	java/io/IOException
+    //   181	189	198	finally
+    //   203	230	198	finally
+    //   231	246	198	finally
+  }
+  
+  public String getDatabase() {
+    return this.database_;
+  }
+  
+  public ByteString getDatabaseBytes() {
+    return ByteString.copyFromUtf8(this.database_);
+  }
+  
+  public int getSerializedSize() {
+    int i = this.memoizedSerializedSize;
+    if (i != -1)
+      return i; 
+    i = 0;
+    if (!this.database_.isEmpty())
+      i = 0 + CodedOutputStream.computeStringSize(1, getDatabase()); 
+    int j = i;
+    if (!this.transaction_.isEmpty())
+      j = i + CodedOutputStream.computeBytesSize(2, this.transaction_); 
+    this.memoizedSerializedSize = j;
+    return j;
+  }
+  
+  public ByteString getTransaction() {
+    return this.transaction_;
+  }
+  
+  public void writeTo(CodedOutputStream paramCodedOutputStream) throws IOException {
+    if (!this.database_.isEmpty())
+      paramCodedOutputStream.writeString(1, getDatabase()); 
+    if (!this.transaction_.isEmpty())
+      paramCodedOutputStream.writeBytes(2, this.transaction_); 
+  }
+  
+  public static final class Builder extends GeneratedMessageLite.Builder<RollbackRequest, Builder> implements RollbackRequestOrBuilder {
+    private Builder() {
+      super(RollbackRequest.DEFAULT_INSTANCE);
+    }
+    
+    public Builder clearDatabase() {
+      copyOnWrite();
+      ((RollbackRequest)this.instance).clearDatabase();
+      return this;
+    }
+    
+    public Builder clearTransaction() {
+      copyOnWrite();
+      ((RollbackRequest)this.instance).clearTransaction();
+      return this;
+    }
+    
+    public String getDatabase() {
+      return ((RollbackRequest)this.instance).getDatabase();
+    }
+    
+    public ByteString getDatabaseBytes() {
+      return ((RollbackRequest)this.instance).getDatabaseBytes();
+    }
+    
+    public ByteString getTransaction() {
+      return ((RollbackRequest)this.instance).getTransaction();
+    }
+    
+    public Builder setDatabase(String param1String) {
+      copyOnWrite();
+      ((RollbackRequest)this.instance).setDatabase(param1String);
+      return this;
+    }
+    
+    public Builder setDatabaseBytes(ByteString param1ByteString) {
+      copyOnWrite();
+      ((RollbackRequest)this.instance).setDatabaseBytes(param1ByteString);
+      return this;
+    }
+    
+    public Builder setTransaction(ByteString param1ByteString) {
+      copyOnWrite();
+      ((RollbackRequest)this.instance).setTransaction(param1ByteString);
+      return this;
+    }
+  }
+}
+
+
+/* Location:              C:\Users\jamar\Documents\android_location\apk_conversion\dex2jar-3.0\classes2-dex2jar.jar!\com\google\firestore\v1\RollbackRequest.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/messageThreadLayout" android:background="@drawable/main_gradient_bg_2" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="@color/colorAccent" android:id="@id/messageThreadBack" android:background="@drawable/white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:layout_alignParentTop="true" android:onClick="onMessageThreadBackClicked" android:layout_alignParentStart="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/messageThreadBlockText" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/this_user_has_blocked_you_from_sending_them_messages" android:layout_below="@id/messageThreadBack" />
+    <TextView android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/messageThreadStrangerBlockText" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/you_blocked_this_stranger_but_you_can_unblock_them_anytime" android:layout_below="@id/messageThreadBlockText" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/messageThreadRecyclerView" android:layout_width="wrap_content" android:layout_height="400.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/messageThreadStrangerBlockText" android:layout_marginStart="168.0dip" />
+    <androidx.cardview.widget.CardView android:id="@id/messageThreadCardView" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="150.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" app:cardCornerRadius="12.0dip" app:cardElevation="11.0dip" app:contentPadding="8.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:id="@id/messageThreadCardScroll" android:layout_width="300.0dip" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@id/messageThreadEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </ScrollView>
+            <ImageButton android:id="@id/messageThreadSend" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:onClick="onMessageThreadSendClicked" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
