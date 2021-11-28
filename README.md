@@ -1,2 +1,3 @@
 # chatpad
-Finally recovered my code from the .aab file I published back in January 2020 for closed testing on the Google Play Console.
+This is an android application that I was working on while in school the fall of 2019. It uses firebase for data.
+This is a Tinder clone that is based on different hobbies people have matching interests in.
