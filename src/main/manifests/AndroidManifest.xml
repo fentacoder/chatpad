@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.infotechnano.audionect" platformBuildVersionCode="29" platformBuildVersionName="10">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.jamar.audionect" platformBuildVersionCode="29" platformBuildVersionName="10">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -10,44 +10,44 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:isSplitRequired="true" android:label="@string/app_name" android:name="util.Person" android:supportsRtl="true" android:theme="@style/AppTheme">
-        <activity android:name="com.infotechnano.audionect.signUpProcess.GenderIdentity"/>
-        <activity android:name="com.infotechnano.audionect.PasswordReset"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.SignUpSecurityKey"/>
-        <activity android:name="com.infotechnano.audionect.BoltPayment"/>
-        <activity android:name="com.infotechnano.audionect.ColorChooser"/>
-        <activity android:name="com.infotechnano.audionect.GenderChoice"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.genderChoiceSignUp"/>
-        <activity android:name="com.infotechnano.audionect.MessageThread"/>
-        <activity android:name="com.infotechnano.audionect.PaymentSetUp"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.SignUpChangePassword"/>
-        <activity android:name="com.infotechnano.audionect.ForgotPasswordScreen"/>
-        <activity android:name="com.infotechnano.audionect.ChangePasswordScreen"/>
-        <activity android:name="com.infotechnano.audionect.EditPictures"/>
-        <activity android:name="com.infotechnano.audionect.CategorySwitcher"/>
-        <activity android:name="com.infotechnano.audionect.PrivacyPolicy"/>
-        <activity android:name="com.infotechnano.audionect.TermsPage"/>
-        <activity android:name="com.infotechnano.audionect.Chat"/>
-        <activity android:name="com.infotechnano.audionect.LocationChooser"/>
-        <activity android:label="@string/title_activity_maps" android:name="com.infotechnano.audionect.MapsActivity"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.SafetyTips"/>
-        <activity android:name="com.infotechnano.audionect.classesNotBeingUsed.SignUpShowMeScreen"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.PictureSignUpScreen"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.InstrumentSelectorSignUp"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.CreateAccountScreen"/>
-        <activity android:name="com.infotechnano.audionect.LogInScreen"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.NameSignUp"/>
-        <activity android:label="@string/title_activity_settings" android:name="com.infotechnano.audionect.Settings" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:label="@string/title_activity_terms_privacy_policy_page" android:name="com.infotechnano.audionect.TermsPrivacyPolicyPage" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name="com.infotechnano.audionect.signUpProcess.StartUpScreen">
+        <activity android:name="com.jamar.audionect.signUpProcess.GenderIdentity"/>
+        <activity android:name="com.jamar.audionect.PasswordReset"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.SignUpSecurityKey"/>
+        <activity android:name="com.jamar.audionect.BoltPayment"/>
+        <activity android:name="com.jamar.audionect.ColorChooser"/>
+        <activity android:name="com.jamar.audionect.GenderChoice"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.genderChoiceSignUp"/>
+        <activity android:name="com.jamar.audionect.MessageThread"/>
+        <activity android:name="com.jamar.audionect.PaymentSetUp"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.SignUpChangePassword"/>
+        <activity android:name="com.jamar.audionect.ForgotPasswordScreen"/>
+        <activity android:name="com.jamar.audionect.ChangePasswordScreen"/>
+        <activity android:name="com.jamar.audionect.EditPictures"/>
+        <activity android:name="com.jamar.audionect.CategorySwitcher"/>
+        <activity android:name="com.jamar.audionect.PrivacyPolicy"/>
+        <activity android:name="com.jamar.audionect.TermsPage"/>
+        <activity android:name="com.jamar.audionect.Chat"/>
+        <activity android:name="com.jamar.audionect.LocationChooser"/>
+        <activity android:label="@string/title_activity_maps" android:name="com.jamar.audionect.MapsActivity"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.SafetyTips"/>
+        <activity android:name="com.jamar.audionect.classesNotBeingUsed.SignUpShowMeScreen"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.PictureSignUpScreen"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.InstrumentSelectorSignUp"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.CreateAccountScreen"/>
+        <activity android:name="com.jamar.audionect.LogInScreen"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.NameSignUp"/>
+        <activity android:label="@string/title_activity_settings" android:name="com.jamar.audionect.Settings" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_terms_privacy_policy_page" android:name="com.jamar.audionect.TermsPrivacyPolicyPage" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.jamar.audionect.signUpProcess.StartUpScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.infotechnano.audionect.MainActivity"/>
+        <activity android:name="com.jamar.audionect.MainActivity"/>
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
-        <service android:enabled="true" android:exported="false" android:name="com.infotechnano.audionect.signUpProcessService" android:stopWithTask="false"/>
-        <service android:enabled="true" android:exported="false" android:name="com.infotechnano.audionect.NotificationService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.jamar.audionect.signUpProcessService" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.jamar.audionect.NotificationService"/>
         <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
@@ -55,7 +55,7 @@
             <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
         </service>
-        <provider android:authorities="com.infotechnano.audionect.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <provider android:authorities="com.jamar.audionect.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
@@ -63,7 +63,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
             </intent-filter>
         </receiver>
-        <provider android:authorities="com.infotechnano.audionect.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.jamar.audionect.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
         <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
@@ -74,7 +74,7 @@
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <provider android:authorities="com.infotechnano.audionect.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.jamar.audionect.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
         <meta-data android:name="com.google.android.play.billingclient.version" android:value="2.1.0"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
